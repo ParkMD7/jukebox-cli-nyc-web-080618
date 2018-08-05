@@ -76,7 +76,7 @@ def run(songs)
       exit_jukebox
       break
     else
-      help
+      puts "Not a valid response."
     end
   end
 end
