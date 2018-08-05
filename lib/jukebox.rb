@@ -60,17 +60,15 @@ end
 
 def run(songs)
   help
+  users_input = ""
+  
+  while users_input
     puts "Please enter a command:"
-      users_input = gets.downcase.chomp
-      input = ""
-  while input
-    puts "Please enter a command:"
-    input = gets.downcase.strip
-    case input
+    users_input = gets.chomp
+      case users_input
     when 'list'
       list(songs)
     when 'play'
-      list(songs)
       play(songs)
     when 'help'
       help
